@@ -18,10 +18,20 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+.gradient_btn {
+  background: linear-gradient(100deg, #E27625 -3.2%, #EBC554 26.72%, #00B3A6 55.18%, #5B5FD1 79.93%);
+
+ 
+}
+.gradient_text_btn {
+}
+
+.header_bg{
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+.footer_bg{
+  background: rgba(48, 52, 48, 1);
+  color: #fff;
 }

@@ -21,17 +21,28 @@ body {
 }
 
 .gradient_btn {
-  background: linear-gradient(100deg, #E27625 -3.2%, #EBC554 26.72%, #00B3A6 55.18%, #5B5FD1 79.93%);
-
- 
+  background: linear-gradient(
+    100deg,
+    #e27625 -3.2%,
+    #ebc554 26.72%,
+    #00b3a6 55.18%,
+    #5b5fd1 79.93%
+  );
 }
 .gradient_text_btn {
 }
 
-.header_bg{
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+.header_bg {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
 }
-.footer_bg{
+.footer_bg {
   background: rgba(48, 52, 48, 1);
   color: #fff;
+}
+.caresol_section_bg {
+  background: rgba(250, 250, 250, 1);
+
+}
+.section2_bg {
+  background: rgba(82, 92, 83, 1);
 }

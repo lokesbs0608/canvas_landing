@@ -8,6 +8,7 @@ import FaceBookIcon from "../../public/assets/Icons/facebook.svg";
 import LinkedinIcon from "../../public/assets/Icons/linkedin.svg";
 import TwiterIcon from "../../public/assets/Icons/twiter.svg";
 import YoutubIcon from "../../public/assets/Icons/youtube.svg";
+import featuredOn from "../../public/assets/images/As featured on.svg";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -74,8 +75,42 @@ export default function App({ Component, pageProps }: AppProps) {
         </nav>
       </header>
       <Component {...pageProps} />
-      <footer className="footer_bg  lg:px-24 px-5 py-24  flex flex-col items-center  lg:gap-12  ">
-        <ul className="sm:block lg:gap-8  lg:flex  items-center mt-6 mb-6 text-sm font-small text-white-400 sm:mb-0 dark:text-gray-400">
+
+      {/* fetures section start */}
+      <div className="caresol_section_bg py-6">
+      <div className="flex flex-col items-center lg:w-900 sm:w-350">
+          <Image   src={featuredOn} alt="featured on" />
+        </div>
+      </div>
+
+      {/* fetures section ends */}
+
+      {/* second section starts */}
+      <div className="section2_bg  gap-12 py-24  flex flex-col items-center">
+        <div>
+          <p className="text-xl sm:text-base lg:text-3xl font-bold text-white">
+          Your Creation, Your Rules, Your Profits!
+          </p>
+        </div>
+        <div>
+          <a
+            href="#"
+            style={{
+              borderRadius: "24px",
+            }}
+            className="text-white gradient_btn    font-large rounded-lg text-md px-8 lg:px-17 py-3 lg:py-2.5 mr-2 focus:outline-none dark:focus:ring-primary-800"
+          >
+            Contact Sales
+          </a>
+        </div>
+        <div>
+          <p className="text-white">Free Forever. No Credit Card required.</p>
+        </div>
+      </div>
+      {/* second section ends */}
+
+      <footer className="footer_bg lg:px-24 px-5 lg:py-24 pb-10 flex flex-col items-center lg:gap-12">
+        <ul className="sm:block lg:gap-8  text-center lg:flex  items-center mt-6 mb-6 text-sm font-small text-white-400 sm:mb-0 dark:text-gray-400">
           <li className="p-2">
             <a href="#" className="mr-4 hover:underline md:mr-10 ">
               About

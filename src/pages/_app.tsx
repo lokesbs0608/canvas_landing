@@ -4,6 +4,10 @@ import type { AppProps } from "next/app";
 import React from "react";
 import Icon from "../../public/assets/logo.png";
 import Image from "next/image";
+import FaceBookIcon from "../../public/assets/Icons/facebook.svg";
+import LinkedinIcon from "../../public/assets/Icons/linkedin.svg";
+import TwiterIcon from "../../public/assets/Icons/twiter.svg";
+import YoutubIcon from "../../public/assets/Icons/youtube.svg";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -70,9 +74,78 @@ export default function App({ Component, pageProps }: AppProps) {
         </nav>
       </header>
       <Component {...pageProps} />
-      <footer className="footer_bg px-24 flex-coloumn items-center ">
-        <div>items</div>
-        <div>items 2</div>
+      <footer className="footer_bg  lg:px-24 px-5 py-24  flex flex-col items-center  lg:gap-12  ">
+        <ul className="sm:block lg:gap-8  lg:flex  items-center mt-6 mb-6 text-sm font-small text-white-400 sm:mb-0 dark:text-gray-400">
+          <li className="p-2">
+            <a href="#" className="mr-4 hover:underline md:mr-10 ">
+              About
+            </a>
+          </li>
+          <li className="p-2">
+            <a href="#" className="mr-4 hover:underline md:mr-10">
+              Report Issue
+            </a>
+          </li>
+          <li className="p-2">
+            <a href="#" className="mr-4 hover:underline md:mr-10">
+              Blogs
+            </a>
+          </li>
+          <li className="p-2">
+            <a href="#" className="mr-4 hover:underline md:mr-10">
+              Terms & Conditions
+            </a>
+          </li>
+          <li className="p-2">
+            <a href="#" className="mr-4 hover:underline md:mr-10">
+              Privacy Policy
+            </a>
+          </li>
+          <li className="p-2">
+            <a href="#" className="mr-4 hover:underline md:mr-10 ">
+              Terms of Use
+            </a>
+          </li>
+        </ul>
+        <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+          <a
+            href="#"
+            className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+          >
+            <Image src={FaceBookIcon} alt={"facebookIcon"} width={25} />
+            <span className="sr-only">Facebook page</span>
+          </a>
+          <a
+            href="#"
+            className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+          >
+            <Image src={TwiterIcon} alt={"facebookIcon"} width={25} />
+            <span className="sr-only">Twiter community</span>
+          </a>
+          <a
+            href="#"
+            className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+          >
+            <Image src={YoutubIcon} alt={"facebookIcon"} width={25} />
+            <span className="sr-only">Youtube page</span>
+          </a>
+          <a
+            href="#"
+            className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+          >
+            <Image src={LinkedinIcon} alt={"facebookIcon"} width={25} />
+            <span className="sr-only">LinkedIn account</span>
+          </a>
+        </div>
+        <div className="mt-10 lg:mt-1">
+          <span className="block text-sm text-white-500 sm:text-center dark:text-gray-400">
+            © 2023{" "}
+            <a href="https://canvas.com/" className="hover:underline">
+              Canvas Space Inc
+            </a>
+            . All Rights Reserved.
+          </span>
+        </div>
       </footer>
     </Layout>
   );

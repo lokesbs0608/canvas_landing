@@ -79,14 +79,14 @@ export default function App({ Component, pageProps }: AppProps) {
       {/* fetures section start */}
       <div className="caresol_section_bg py-6">
       <div className="flex flex-col items-center lg:w-900 sm:w-350">
-          <Image   src={featuredOn} alt="featured on" />
+          <Image   src={featuredOn} alt="featured on" width={300} height={300} />
         </div>
       </div>
 
       {/* fetures section ends */}
 
       {/* second section starts */}
-      <div className="section2_bg  gap-12 py-24  flex flex-col items-center">
+      <div className="section2_bg  gap-12 py-16  flex flex-col items-center">
         <div>
           <p className="text-xl sm:text-base lg:text-3xl font-bold text-white">
           Your Creation, Your Rules, Your Profits!
@@ -109,7 +109,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </div>
       {/* second section ends */}
 
-      <footer className="footer_bg lg:px-24 px-5 lg:py-24 pb-10 flex flex-col items-center lg:gap-12">
+      <footer className="footer_bg lg:px-10 px-3 lg:py-10 pb-10 flex flex-col items-center lg:gap-12">
         <ul className="sm:block lg:gap-8  text-center lg:flex  items-center mt-6 mb-6 text-sm font-small text-white-400 sm:mb-0 dark:text-gray-400">
           <li className="p-2">
             <a href="#" className="mr-4 hover:underline md:mr-10 ">

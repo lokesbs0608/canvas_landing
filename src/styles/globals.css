@@ -29,7 +29,45 @@ body {
     #5b5fd1 79.93%
   );
 }
+
 .gradient_text_btn {
+  background-color: transparent;
+  border: 1px solid;
+  padding: 5px 15px;
+  border-image-source: linear-gradient(
+    87.86deg,
+    #ab8d3e 0%,
+    #cdd02b 35.33%,
+    #2ebe68 64.21%,
+    #396bb6 94.7%
+  );
+  border-image-slice: 1;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  overflow: visible;
+  border-radius: 45px;
+  border: 1px solid linear-gradient(
+    87.86deg,
+    #ab8d3e 0%,
+    #cdd02b 35.33%,
+    #2ebe68 64.21%,
+    #396bb6 94.7%
+  ),;
+  background-image: linear-gradient(
+      87.86deg,
+      #ab8d3e 0%,
+      #cdd02b 35.33%,
+      #2ebe68 64.21%,
+      #396bb6 94.7%
+    ),
+    linear-gradient(
+      265.17deg,
+      rgba(217, 217, 217, 0) 9.77%,
+      rgba(217, 217, 217, 0) 53.9%
+    );
+  background-origin: border-box, content-box;
 }
 
 .header_bg {
@@ -41,7 +79,6 @@ body {
 }
 .caresol_section_bg {
   background: rgba(250, 250, 250, 1);
-
 }
 .section2_bg {
   background: rgba(82, 92, 83, 1);
